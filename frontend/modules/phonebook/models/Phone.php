@@ -41,7 +41,7 @@ class Phone extends \yii\db\ActiveRecord
             [['id_contact', 'id_type'], 'integer'],
             [['created_at', 'updated_at'], 'safe'],
             [['phone'], 'integer','message' => 'Телефонът трябва да е само цифри.'],
-            [['id_type'],'exist','targetClass' => '\frontend\modules\phonebook\models\PhoneType']
+            [['id'],'exist','targetClass' => '\frontend\modules\phonebook\models\PhoneType']
         ];
     }
 
